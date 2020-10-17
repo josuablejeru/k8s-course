@@ -3,8 +3,20 @@ kind: Pod
 metadata:
   name: webapp
   labels:
-    app: webapp # any key value can be used (eg mylabel: bar)
+    release: "0" # any key value can be used (eg mylabel: bar)
 spec:
   containers:
     - name: webapp
       image: richardchesterwood/k8s-fleetman-webapp-angular:release0
+
+---
+apiVersion: v1
+kind: Pod
+metadata:
+  name: webapp-release-0-5
+  labels:
+    release: 0-5 # any key value can be used (eg mylabel: bar)
+spec:
+  containers:
+    - name: webapp
+      image: richardchesterwood/k8s-fleetman-webapp-angular:release0-5

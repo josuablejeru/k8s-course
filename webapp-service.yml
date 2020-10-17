@@ -13,7 +13,7 @@ spec:
       port: 80
       nodePort: 30080 # this is a restriction by K8's we cant use ports under 30000
   selector:
-    app: webapp
+    release: 0-5
   # See the documentation to get startet with loadbalancers
   # https://minikube.sigs.k8s.io/docs/handbook/accessing/#loadbalancer-access
   # type: LoadBalencer

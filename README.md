@@ -33,3 +33,9 @@ get into the container via shell
 ```bash
  kubectl exec -it <pod-name> -- sh
 ```
+
+Get only the pods with there lable and a filter for selector (eg release=0)
+
+```bash
+kubectl get po --show-labels -l <selector>
+```
