@@ -3,6 +3,7 @@ kind: Pod
 metadata:
   name: webapp
   labels:
+    app: webapp
     release: "0" # any key value can be used (eg mylabel: bar)
 spec:
   containers:
@@ -15,6 +16,7 @@ kind: Pod
 metadata:
   name: webapp-release-0-5
   labels:
+    app: webapp
     release: 0-5 # any key value can be used (eg mylabel: bar)
 spec:
   containers:
